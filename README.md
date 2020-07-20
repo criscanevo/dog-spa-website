@@ -2,9 +2,9 @@
 
 - El mejor Spa Perruno del Mundo 
 
-# Síguenos para mas recetas
-
-- Servicio
+# Secciones:  -  -  - 
+- Inicio
 - Guardería
-- 
-- 
+- Quienes Somos
+- Servicios
+- Contactanos
