@@ -1,0 +1,59 @@
+
+.hero{
+  background-image: url('../images/dog.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.bg-light{
+  background-color: #1A1A3C00!important;
+}
+
+.white{
+  color: white!important;
+}
+
+.navbar-toggler-icon {
+  background-image: url('../images/burger.png')!important;
+  width: 40px;
+}
+
+.index-texto-principal{
+  margin: 10%;
+}
+
+.index-texto-principal h1{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.index-texto-principal p{
+  color: #f2f2f2;
+  font-size: 20px;
+}
+
+.btn-info{
+  background-color: #73d9a9!important;
+  font-weight: bold;
+  border: none;
+}
+
+.footer{
+  color:#f7f7f7;
+  background-color: #c0a7d9;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p{
+  margin-top: 10px;
+}
+
+.logo{
+  height: 30px;
+}
