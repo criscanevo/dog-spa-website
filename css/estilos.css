@@ -20,6 +20,14 @@
   width: 40px;
 }
 
+.mt{
+  margin-top: 3% !important;
+}
+
+.mb{
+  margin-bottom: 3% !important;
+}
+
 .index-texto-principal{
   margin: 10%;
 }
@@ -39,6 +47,11 @@
   background-color: #73d9a9!important;
   font-weight: bold;
   border: none;
+}
+
+.fa-heart{
+  color: red;
+  font-size: 50px;
 }
 
 .footer{
