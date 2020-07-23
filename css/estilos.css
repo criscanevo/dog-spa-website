@@ -35,6 +35,7 @@
 .subtitulo-index{
   text-align: center;
   margin-bottom: 5%;
+  font-size: 30px;
   color: 	#696969	;
 }
 
@@ -86,6 +87,31 @@
   background-color: #73d9a9;
 }
 
+.titulo-historia-inicio{
+  color: #f2f2f2;
+}
+
+.texto-historia-index{
+  color: #f2f2f2;
+}
+
+.imagen-historia-inicio{
+  width: 60%;
+  display:block;
+  margin:auto;
+}
+
+.btn-light{
+  background-color: #f2f2f2!important;
+  color: #73d9a9;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-light:hover{
+  color:#c0a7d9!important;
+}
+
 .footer{
   color:#f7f7f7;
   background-color: #c0a7d9;
@@ -94,14 +120,15 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .contactanos{
   padding: 114px 0 40px;
 }
+
 .btn-primary{
   background-color: #c0a7d9 !important;
   border-color : #c0a7d9 !important;
 }
-
 
 .footer p{
   margin-top: 10px;
