@@ -94,6 +94,14 @@
   align-items: center;
   justify-content: space-between;
 }
+.contactanos{
+  padding: 114px 0 40px;
+}
+.btn-primary{
+  background-color: #c0a7d9 !important;
+  border-color : #c0a7d9 !important;
+}
+
 
 .footer p{
   margin-top: 10px;
