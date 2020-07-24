@@ -68,16 +68,24 @@
   background-repeat: repeat;
 }
 
+.fondo-container-servicios{
+  width: 100%;
+  height: 40%;
+  background-image: url('../images/fondo-servicios.png');
+  background-size:cover;
+  background-repeat: repeat;
+}
+
 .card-title{
   color: 	#696969!important;
 }
 
-.fa-soap, .fa-dog, .fa-cut, .fa-paw{
+.fa-soap, .fa-dog, .fa-cut, .fa-paw, .fa-gem, .fa-star{
   color: #73d9a9;
   font-size: 100px;
 }
 
-.fa-soap:hover, .fa-dog:hover, .fa-cut:hover, .fa-paw:hover{
+.fa-soap:hover, .fa-dog:hover, .fa-cut:hover, .fa-paw:hover, .fa-gem:hover, .fa-star:hover{
   color: #c0a7d9;
 }
 
@@ -110,6 +118,38 @@
 
 .btn-light:hover{
   color:#c0a7d9!important;
+}
+
+.btn-secondary{
+  background-color: white;
+  color: #73d9a9;
+  font-weight: bold;
+  border: 2px solid #73d9a9;
+}
+
+.btn-secondary:hover{
+  background-color: #73d9a9;
+  color:white;
+  font-weight: bold;
+  border: 2px solid #73d9a9;
+}
+
+.btn-secondary:focus{
+  background-color: #73d9a9;
+  color:white;
+  font-weight: bold;
+  border: 2px solid #73d9a9;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active{
+  background-color: white;
+  color: #73d9a9;
+  font-weight: bold;
+  border: 2px solid #73d9a9;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
 
 .footer{
