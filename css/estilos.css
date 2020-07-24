@@ -161,12 +161,13 @@
   justify-content: space-between;
 }
 
-.contactanos{
-  padding: 114px 0 40px;
+.contactanos .card{
+  margin: 14px 0 40px;
+  border: 10px !important;
 }
 
 .btn-primary{
-  background-color: #c0a7d9 !important;
+  background-color: #372946 !important;
   border-color : #c0a7d9 !important;
 }
 
