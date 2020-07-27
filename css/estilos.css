@@ -32,11 +32,19 @@
   background-color: #fff0!important;
   border: none!important;
 }
+
 .subtitulo-index{
   text-align: center;
   margin-bottom: 5%;
   font-size: 30px;
   color: 	#696969	;
+}
+
+.subtitulo-peluqueria{
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 30px;
+  color: 	white;
 }
 
 .index-texto-principal{
@@ -80,6 +88,11 @@
   color: 	#696969!important;
 }
 
+.card-title-peluqueria{
+  color: white;
+  text-align: center;
+}
+
 .fa-soap, .fa-dog, .fa-cut, .fa-paw, .fa-gem, .fa-star{
   color: #73d9a9;
   font-size: 100px;
@@ -89,10 +102,25 @@
   color: #c0a7d9;
 }
 
+.fa-crown, .fa-spa, .fa-certificate{
+  color: white;
+  font-size: 100px;
+}
+
+.fa-crown:hover, .fa-spa:hover, .fa-certificate:hover{
+  color: #c9f2df;
+}
+
 .fondo-container-historia{
   width: 100%;
   height: 40%;
   background-color: #73d9a9;
+}
+
+.fondo-container-paseos{
+  width: 100%;
+  height: 40%;
+  background-color: #c0a7d9;
 }
 
 .titulo-historia-inicio{
@@ -103,8 +131,19 @@
   color: #f2f2f2;
 }
 
+.texto-peluqueria{
+  color: #f2f2f2;
+  text-align: center;
+}
+
 .imagen-historia-inicio{
   width: 60%;
+  display:block;
+  margin:auto;
+}
+
+.icono-servicios{
+  padding: 10%;
   display:block;
   margin:auto;
 }
