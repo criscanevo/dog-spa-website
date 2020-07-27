@@ -44,113 +44,127 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h4 class="m-t-lg"><i class="pe-7s-airplay text-success icon-big"></i></h4>        
+        <h4 class="m-t-lg"><i class="pe-7s-airplay text-success icon-big"></i></h4>
       </div>
     </div>
     <br>
     <section>
       <div class="container">
-        <form>
-          <div class="form-group">                    
-          
+        <div class="form-group">
           <div class="index-texto-principal">
             <h1>¿Cómo lo vas a consentir?</h1>
             <p>Conoce todos los servicios que te ofrecemos.</p>
           </div>
-      </div>     
-
-      <div class="container">
-        <form>
-          <div class="form-group">
-           <h4 class="m-t-lg"><i class="pe-7s-airplay text-success icon-big"></i></h4>
-            <p>Nuestro Simulador de costo del tratamiento de tu mascota. Realiza tu cotizacion y enamorate de nuestro
-              establecimiento, estamos para servirte.
-            </p>
-
-            <label>Tamaño de tu mascota</label>
-            <select class="form-control" id="tamano">
-              <option value="20000">Grande</option>
-              <option value="15000">Mediano</option>
-              <option value="10000">Pequeño</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Estilos</label>
-            <select class="form-control" id="corte">
-              <option value="25000">león</option>
-              <option value="20000">Inglés</option>
-              <option value="18000">Moderno</option>
-              <option value="15000">Osito de peluche</option>
-              <option value="10000">Cachorro</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Cortes</label>
-            <select class="form-control" id="guarderia">
-              <option value="20000">Gold</option>
-              <option value="15000">Rouse</option>
-              <option value="10000">Pekin</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Relax</label>
-            <select class="form-control" id="Relax">
-              <option value="10000">Paseo</option>
-              <option value="15000">Guarderia</option>
-              <option value="1000">Golosina</option>
-            </select>
-          </div>
-          <button type="button" class="btn btn-primary" id="simularBtn">Simular costo</button>
-
-      <footer class="footer">
-        <div>
-          <img class="logo" src="images/favicon.png" alt="">
         </div>
-        <div class="">
-          <p class="texto-footer">Hecho con 💜 por: Milena, David y Camila.</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <h4 class="m-t-lg"><i class="pe-7s-airplay text-success icon-big"></i></h4>
+          <p>Nuestro Simulador de costo del tratamiento de tu mascota. Realiza tu cotizacion y enamorate de nuestro
+            establecimiento, estamos para servirte.
+          </p>
+
+          <label>Tamaño de tu mascota</label>
+          <select class="form-control" id="tamano">
+            <option value="20000">Grande</option>
+            <option value="15000">Mediano</option>
+            <option value="10000">Pequeño</option>
+          </select>
         </div>
-        <div>
-          <a href="https://www.facebook.com/" target="_blank">
-            <img class="logo" src="images/facebook.svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img class="logo" src="images/instagram.svg" alt="">
-          </a>
+        <div class="form-group">
+          <label>Estilos</label>
+          <select class="form-control" id="corte">
+            <option value="25000">león</option>
+            <option value="20000">Inglés</option>
+            <option value="18000">Moderno</option>
+            <option value="15000">Osito de peluche</option>
+            <option value="10000">Cachorro</option>
+          </select>
         </div>
-      </footer>
+        <div class="form-group">
+          <label>Cortes</label>
+          <select class="form-control" id="guarderia">
+            <option value="20000">Gold</option>
+            <option value="15000">Rouse</option>
+            <option value="10000">Pekin</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Relax</label>
+          <select class="form-control" id="Relax">
+            <option value="10000">Paseo</option>
+            <option value="15000">Guarderia</option>
+            <option value="1000">Golosina</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary2" id="simularBtn">Simular costo</button>
+      </form>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container" id="alert">
+        <div class="alert alert-primary text-center" role="alert">
+            <label id="labelMensaje"></label>
+        </div>
+    </div>
+  </section>
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 
-        <script>
-          $( document ).ready(function() {
-              $( "#alert" ).hide();
-              $( "#simularBtn" ).click(function() {
-                  var precio = 0;
-                  var tamano = parseInt($('#tamano').val());   
-                  var corte = parseInt($('#corte').val());         
-                  var guarderia = parseInt($('#guarderia').val());        
-                  var paseo = parseInt($('#paseo').val());         
-  
-                  precio = tamano + corte + guarderia + paseo;
-  
-                  var mensaje = "El valor aproximado del costo de su mascota es: " +precio
-  
-                  $('#labelMensaje').text(mensaje);
-  
-                  $("#alert").show(2000);
-              });
-          });
-      </script>
+  <footer class="footer">
+    <div>
+      <img class="logo" src="images/favicon.png" alt="">
+    </div>
+    <div class="">
+      <p class="texto-footer">Hecho con 💜 por: Milena, David y Camila.</p>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img class="logo" src="images/facebook.svg" alt="">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img class="logo" src="images/instagram.svg" alt="">
+      </a>
+    </div>
+  </footer>
 
-     
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#alert").hide();
+      $("#simularBtn").click(function () {
+        var precio = 0;
+        var tamano = parseInt($('#tamano').val());
+        var corte = parseInt($('#corte').val());
+        var guarderia = parseInt($('#guarderia').val());
+        var relax = parseInt($('#Relax').val());
+
+        precio = tamano + corte + guarderia + relax;
+
+        var mensaje = "El valor aproximado del costo de su mascota es: " + precio
+
+        $('#labelMensaje').text(mensaje);
+
+        $("#alert").show(2000);
+      });
+    });
+  </script>
+
+
 
 
 </body>
