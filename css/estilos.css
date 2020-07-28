@@ -206,13 +206,46 @@
 }
 
 .btn-primary{
-  background-color: #372946 !important;
-  border-color : #c0a7d9 !important;
+  background-color: #c0a7d9 !important;
+  border-color: #c0a7d9!important;
+  font-weight: bold;
 }
 
 .btn-primary2{
   background-color: #73d9a9 !important;
-  border-color : #c0a7d9 !important;
+  border: 2px solid white !important;
+}
+
+.btn-primary-bannio{
+  background-color: #c9f2df;
+  color: #73d9a9;
+  font-weight: bold;
+}
+
+.btn-primary-bannio:hover{
+  background-color: #c0a7d9;
+  color: white;
+  text-decoration: none!important;
+}
+
+.btn-secondary-paseo{
+  background-color: #e9dff2;
+  color: #c0a7d9;
+  font-weight: bold;
+}
+
+.btn-secondary-paseo:hover{
+  color: #73d9a9;
+}
+
+.btn-secondary-guarderia{
+  background-color: #73d9a9;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-secondary-guarderia:hover{
+  color: #c9f2df;
 }
 
 .footer p{

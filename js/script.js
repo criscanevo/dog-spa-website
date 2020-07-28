@@ -6,7 +6,6 @@ $(document).ready(function () {
 });
 
 
-
 // Configurar los controles
 var $breed_select = $('select.breed_select');
 $breed_select.change(function() {
@@ -31,7 +30,7 @@ function populateBreedsSelect(breeds) {
 }
 // se activa cuando cambia el control de selección de raza
 function getDogByBreed(breed_id) {
-  // Buscar imagenes que contenga la raza 
+  // Buscar imagenes que contenga la raza
   ajax_get('https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=' + breed_id, function(data) {
 
     if (data.length == 0) {
