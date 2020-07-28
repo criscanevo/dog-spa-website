@@ -41,6 +41,7 @@ function getDogByBreed(breed_id) {
     } else {
       //de lo contrario, muestra la imagen y los datos de la raza
       displayBreed(data[0])
+      console.log(data[0].breeds[0].life_span)
     }
   });
 }
@@ -53,9 +54,19 @@ function clearBreed() {
 function displayBreed(image) {
   $('#breed_image').attr('src', image.url);
   $("#breed_data_table tr").remove();
-
+  var breed_data = image.breeds[0]
+  var annosVida = breed_data.life_span;
+  var altura = breed_data.height.metric;
+  var peso = breed_data.weight.metric;
+  console.log("Años Perrunos: "+annosVida)
+  console.log("Altura: "+altura)
+  console.log("Peso: "+peso)
+  $("#breed_data_table").append("<tr><td>Años Perrunos: </td><td>" + annosVida + "</td></tr>");
+  $("#breed_data_table").append("<tr><td>Altura: </td><td>" + altura + "</td></tr>");
+  $("#breed_data_table").append("<tr><td>Peso: </td><td>" + peso + "</td></tr>");
 
 }
+
 
 // hacer una solicitud de Ajax
 
@@ -63,11 +74,11 @@ function ajax_get(url, callback) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      console.log('responseText:' + xmlhttp.responseText);
+      //console.log('responseText:' + xmlhttp.responseText);
       try {
         var data = JSON.parse(xmlhttp.responseText);
       } catch (err) {
-        console.log(err.message + " in " + xmlhttp.responseText);
+        //console.log(err.message + " in " + xmlhttp.responseText);
         return;
       }
       callback(data);
