@@ -57,10 +57,10 @@ function displayBreed(image) {
   var annosVida = breed_data.life_span;
   var altura = breed_data.height.metric;
   var peso = breed_data.weight.metric;
-  console.log("Años Perrunos: "+annosVida)
+  console.log("Años de vida: "+annosVida)
   console.log("Altura: "+altura)
   console.log("Peso: "+peso)
-  $("#breed_data_table").append("<tr><td>Años Perrunos: </td><td>" + annosVida + "</td></tr>");
+  $("#breed_data_table").append("<tr><td>Años de vida: </td><td>" + annosVida + "</td></tr>");
   $("#breed_data_table").append("<tr><td>Altura: </td><td>" + altura + "</td></tr>");
   $("#breed_data_table").append("<tr><td>Peso: </td><td>" + peso + "</td></tr>");
 
