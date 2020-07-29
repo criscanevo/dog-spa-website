@@ -10,38 +10,51 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilos.css">
 
-<style>
+  <style>
+    #banner-message {
+      background: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      font-size: 25px;
+      text-align: center;
+      transition: all 0.2s;
+      margin: 0 auto;
+      
+    }
 
+    #breed_data {
+      background: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      font-size: 12px;
+      text-align: left;
+      transition: all 0.2s;
+      margin: 0 auto;
+     
+    }
 
-#banner-message {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  font-size: 25px;
-  text-align: center;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 500px;
-}
+    #breed_image {
+      background: #fff;
+      margin: 0 auto;
+      width: 460px;
+    }
 
-#breed_data {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  font-size: 12px;
-  text-align: left;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 500px;
-}
+    .card {
+      position: relative !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-direction: column !important;
+      flex-direction: column !important;
+      min-width: 0 !important;
+      word-wrap: break-word !important;
+      background-color: #fff !important;
+      background-clip: border-box !important;
+      border: 1px solid rgba(0, 0, 0, .125) !important;
+      border-radius: .25rem;
+    }
 
-#breed_image {
-  background: #fff;
-  margin: 0 auto;
-  width: 460px;
-}
-
-</style>
+    
+  </style>
 </head>
 
 <body>
@@ -76,44 +89,33 @@
     </div>
   </div>
 
-<!--
+  
+  <div class="container">
 
+    <div class="row">
+      <div class="col-lg-12 col-md-6 col-sm-12" style="margin: 0 auto;" >
 
-  <div class="body-page">
+        <div class="card" style="width: 18rem;">
+          <img id="breed_image" src="" class="card-img-top img-fluid" alt="">
+          <div class="card-body">
+            <div id="banner-message">
+              <div>Selecciona</div>
+              <select class="breed_select form-control">
+                <option></option>
+              </select>
+            </div>
+            <div id="breed_data">
+              <h6 class="card-title card-text">
+                <table id="breed_data_table" class="tex-center" style="text-align: right">
+                </table>
+              </h6>
+            </div>
+          </div>
 
-
-    <table class="table table-striped text center">
-
-      <thead class="thead-dark">
-        <th>Raza</th>
-        <th>Foto</th>
-      </thead>
-      <tbody id="lista-perros">
-
-      </tbody>
-
-    </table>
-
+      </div>
+      </div>
+    </div>
   </div>
--->
-  <div id="banner-message">
-    <p>Selecciona la raza</p>
-
-    <select class="breed_select">
-      <option></option>
-  </select>
-
-  </div>
-  <div id="breed_data">
-    <img id="breed_image" src="" />
-    <p>
-      Raza de tu Peludito
-    </p>
-    <table id="breed_data_table">
-
-    </table>
-  </div>
-
 
   <footer class="footer">
     <div>
@@ -141,24 +143,6 @@
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      traerImagen();
-    });
-
-    function traerImagen() {
-      let url = 'https://api.thedogapi.com/v1/images/search'
-      $.get(url, function (data) {
-        const resultados = data.results;
-        console.log(resultados);
-
-      });
-
-
-
-    }
-
-  </script>
 </body>
 
 </html>
