@@ -12,6 +12,7 @@ $breed_select.change(function() {
   var id = $(this).children(":selected").attr("id");
   getDogByBreed(id)
 });
+
 // Carga todas las razas
 function getBreeds() {
   ajax_get('https://api.thedogapi.com/v1/breeds', function(data) {
@@ -57,12 +58,21 @@ function displayBreed(image) {
   var annosVida = breed_data.life_span;
   var altura = breed_data.height.metric;
   var peso = breed_data.weight.metric;
+<<<<<<< HEAD
   console.log("Años de vida: "+annosVida)
   console.log("Altura: "+altura)
   console.log("Peso: "+peso)
   $("#breed_data_table").append("<tr><td>Años de vida: </td><td>" + annosVida + "</td></tr>");
   $("#breed_data_table").append("<tr><td>Altura: </td><td>" + altura + "</td></tr>");
   $("#breed_data_table").append("<tr><td>Peso: </td><td>" + peso + "</td></tr>");
+=======
+  console.log("Años: "+annosVida)
+  console.log("Altura: "+altura)
+  console.log("Peso: "+peso)
+  $("#breed_data_table").append("<tr><td style='text-align: right'>Años Perrunos: </td><td style='text-align: left'>" + annosVida + "</td></tr>");
+  $("#breed_data_table").append("<tr><td style='text-align: right'>Altura: </td><td style='text-align: left'>" + altura + "</td></tr>");
+  $("#breed_data_table").append("<tr><td style='text-align: right'>Peso: </td><td style='text-align: left'>" + peso + "</td></tr>");
+>>>>>>> 242a978a495df6e473ad94e721bd782145e9a01d
 
 }
 
