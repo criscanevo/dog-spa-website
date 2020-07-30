@@ -194,15 +194,30 @@
 .footer{
   color:#f7f7f7;
   background-color: #c0a7d9;
-  padding: 10px 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.texto-footer{
+  text-align: center;
+}
+
 .contactanos .card{
   margin: 14px 0 40px;
   border: 10px !important;
+}
+
+.contactanos{
+  background-image: url('../images/fondo.png');
+}
+
+
+.alert-primary{
+  background-color: #73d9a9!important;
+  color: white!important;
+  font-weight: bold!important;
 }
 
 .btn-primary{
@@ -250,8 +265,15 @@
 
 .footer p{
   margin-top: 10px;
+  font-size: 12px;
+}
+
+.col-sm-10{
+  padding-right: 0!important;
+  padding-left: 0!important;
 }
 
 .logo{
   height: 30px;
+  text-align: right;
 }
