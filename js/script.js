@@ -16,6 +16,7 @@ $breed_select.change(function() {
 // Carga todas las razas
 function getBreeds() {
   ajax_get('https://api.thedogapi.com/v1/breeds', function(data) {
+    console.log(data)
     populateBreedsSelect(data)
   });
 }
@@ -40,8 +41,9 @@ function getDogByBreed(breed_id) {
       $("#breed_data_table").append("<tr><td>Sorry, no Image for that breed yet</td></tr>");
     } else {
       //de lo contrario, muestra la imagen y los datos de la raza
-      displayBreed(data[0])
       console.log(data[0].breeds[0].life_span)
+      console.log(data[0].breeds[0].life_span)
+      displayBreed(data[0])
     }
   });
 }
