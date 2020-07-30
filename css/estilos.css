@@ -114,6 +114,12 @@
 .fondo-container-historia{
   width: 100%;
   height: 40%;
+  background-color: #c0a7d9;
+}
+
+.fondo-container-peluqueria{
+  width: 100%;
+  height: 40%;
   background-color: #73d9a9;
 }
 
