@@ -6,7 +6,7 @@
     text-align: center;
     transition: all 0.2s;
     margin: 0 auto;
-    
+
   }
 
   #breed_data {
@@ -17,7 +17,7 @@
     text-align: left;
     transition: all 0.2s;
     margin: 0 auto;
-   
+
   }
 
   #breed_image {
@@ -27,15 +27,20 @@
   }
 
   .card {
-    position: relative !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
-    min-width: 0 !important;
-    word-wrap: break-word !important;
     background-color: #fff !important;
     background-clip: border-box !important;
     border: 1px solid rgba(0, 0, 0, .125) !important;
     border-radius: .25rem;
+  }
+
+  .pl{
+    padding-left: 7%;
+  }
+
+  .pr{
+    padding-right: 5%;
+  }
+
+  .card-title{
+    text-align: center;
   }
