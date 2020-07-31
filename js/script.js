@@ -9,12 +9,15 @@ $(document).ready(function () {
 // Configurar los controles
 var $breed_select = $('select.breed_select');
 $breed_select.change(function() {
+  $('#cargador').show();
   var id = $(this).children(":selected").attr("id");
   getDogByBreed(id)
+  
 });
 
 // Carga todas las razas
 function getBreeds() {
+  $('#cargador').show();
   ajax_get('https://api.thedogapi.com/v1/breeds', function(data) {
     console.log(data)
     populateBreedsSelect(data)
@@ -54,19 +57,23 @@ function clearBreed() {
 }
 // muestra la imagen y los datos de la raza
 function displayBreed(image) {
+  
+  $('#cargador').fadeOut('slow');
   $('#breed_image').attr('src', image.url);
   $("#breed_data_table tr").remove();
+  
+  $('#breed_image').show();
   var breed_data = image.breeds[0]
   var annosVida = breed_data.life_span;
   var altura = breed_data.height.metric;
   var peso = breed_data.weight.metric;
   console.log("Años: "+annosVida)
-  console.log("Altura: "+altura)
-  console.log("Peso: "+peso)
+  console.log("Altura: "+altura+" cm")
+  console.log("Peso: "+peso+ "kg")
   $("#breed_data_table").append("<tr><td style='text-align: right'>Años de Vida: </td><td style='text-align: left'>" + annosVida + "</td></tr>");
-  $("#breed_data_table").append("<tr><td style='text-align: right'>Altura: </td><td style='text-align: left'>" + altura + "</td></tr>");
-  $("#breed_data_table").append("<tr><td style='text-align: right'>Peso: </td><td style='text-align: left'>" + peso + "</td></tr>");
-
+  $("#breed_data_table").append("<tr><td style='text-align: right'>Altura: </td><td style='text-align: left'>" +  altura+" cm</td></tr>");
+  $("#breed_data_table").append("<tr><td style='text-align: right'>Peso: </td><td style='text-align: left'>" + peso+ " kg</td></tr>");
+  
 }
 
 

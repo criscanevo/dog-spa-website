@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/estiloapi.css">
 </head>
+
 <body>
   <div class="hero">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,27 +46,32 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 "   style=" padding: 10px;">
-        <div class="card" >
+
+      
+      <div class="col-lg-6 col-md-12 col-sm-12 " style=" padding: 10px;">
+        <div class="card">
+          <div class="text-center" style="display: none;" id="cargador">
+            <img src="images/load.gif" />
+          </div>
           <img id="breed_image" src="" class="card-img-top img-fluid" alt="">
           <div class="card-body">
             <div id="banner-message">
               <div>
-              <div>Selecciona</div>
-              <select class="breed_select form-control">
-                <option></option>
-              </select>
-            </div>
-            <div id="breed_data">
-              <h6 class="card-title card-text">
-                <table id="breed_data_table" class="tex-center" style="text-align: right">
-                </table>
-              </h6>
+                <div>Selecciona</div>
+                <select class="breed_select form-control">
+                  <option></option>
+                </select>
+              </div>
+              <div id="breed_data">
+                <h6 class="card-title card-text">
+                  <table id="breed_data_table" class="tex-center" style="text-align: right">
+                  </table>
+                </h6>
+              </div>
             </div>
           </div>
+        </div>
       </div>
-      </div>
-    </div>
     </div>
   </div>
 
@@ -74,9 +80,9 @@
     <input type="number" id="edadP">
     <button type="button" class="btn btn-primary-bannio" id="calcularBtn">Calcular</button>
     <div class="container" id="alert">
-        <div class="alert alert-primary text-center" role="alert">
-            <label id="labelMensaje"></label>
-        </div>
+      <div class="alert alert-primary text-center" role="alert">
+        <label id="labelMensaje"></label>
+      </div>
     </div>
   </div>
 
@@ -108,7 +114,7 @@
   <script type="text/javascript">
 
     $("#alert").hide();
-    $("#calcularBtn").click(function (){
+    $("#calcularBtn").click(function () {
 
       const edadP = parseInt(document.getElementById('edadP').value)
       const nombreP = document.getElementById('nombreP').value
@@ -116,7 +122,7 @@
 
       if (edadP > 0) {
         var mensaje = nombreP + " tiene " + edadPerro + " años humanos."
-      }else{
+      } else {
         var mensaje = "La edad no es válida"
       }
 
