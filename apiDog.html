@@ -43,40 +43,56 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12 "   style=" padding: 10px;">
-        <div class="card" >
-          <img id="breed_image" src="" class="card-img-top img-fluid" alt="">
-          <div class="card-body">
-            <div id="banner-message">
-              <div>
-              <div>Selecciona</div>
-              <select class="breed_select form-control">
-                <option></option>
-              </select>
-            </div>
-            <div id="breed_data">
-              <h6 class="card-title card-text">
-                <table id="breed_data_table" class="tex-center" style="text-align: right">
-                </table>
-              </h6>
+  <div class="fondo-container">
+    <div class="container pt pb">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Aprende más sobre razas de perros</h5>
+              <p class="pl pr pt pb">¿Te gustaría saber cómo se ve un Xoloitzcuintli? o ¿Cuánto llega a vivir un Border Collie? Encuentra eso y más aquí.</p>
+              <div class="row pl pr">
+                <div class="card" >
+                  <img id="breed_image" src="" class="card-img-top img-fluid" alt="">
+                  <div class="card-body">
+                    <div id="banner-message">
+                      <div>
+                      <div><h6>Selecciona una raza</h6></div>
+                      <select class="breed_select form-control">
+                        <option></option>
+                      </select>
+                    </div>
+                    <div id="breed_data">
+                      <h6 class="card-title card-text">
+                        <table id="breed_data_table" class="tex-center" style="text-align: right">
+                        </table>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
-      </div>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <input type="text" id="nombreP" placeholder="Nombre">
-    <input type="number" id="edadP">
-    <button type="button" class="btn btn-primary-bannio" id="calcularBtn">Calcular</button>
-    <div class="container" id="alert">
-        <div class="alert alert-primary text-center" role="alert">
-            <label id="labelMensaje"></label>
         </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">¿Cuántos años humanos tiene tu mascota?</h5>
+              <div class="container">
+                <input type="text" id="nombreP" placeholder="Nombre">
+                <input type="number" id="edadP">
+                <button type="button" class="btn btn-primary-bannio" id="calcularBtn">Calcular</button>
+                <div class="container" id="alert">
+                    <div class="alert alert-primary text-center" role="alert">
+                        <label id="labelMensaje"></label>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
