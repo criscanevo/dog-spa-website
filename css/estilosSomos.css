@@ -74,8 +74,11 @@
 
 .footer p{
   margin-top: 10px;
+  font-size: 12px;
+  text-align: center !important;
 }
 
 .logo{
   height: 30px;
+  text-align: right;
 }
